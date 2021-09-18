@@ -55,7 +55,7 @@
     justify-content: center;
   }
   
-  .photo-grid {
+.photo-grid {
     width: 900px;
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@
     align-items: center;
   }
   
-  .photo-grid-item {
+.photo-grid-item {
     border: 1px solid #fff;
     width: 300px;
     height: 300px;
