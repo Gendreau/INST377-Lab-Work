@@ -11,6 +11,14 @@
     display: flex;
     justify-content: center;
   }
+
+  .top-bar {
+    color: #fff;
+    background-color: #006400;  /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+  }
   
   .menu {
     width: 900px;
@@ -19,7 +27,6 @@
   }
 
   .links {
-      border: 1px solid #fff;
       display: flex;
       justify-content: flex-end;
   }
@@ -29,7 +36,6 @@
   }
 
   .header-container {
-      color: #5995DA;
       background-color: #D6E9FE;
       display: flex;
       justify-content: center;
@@ -43,10 +49,8 @@
       align-items: stretch;
   }
 
-.social,
-.logo,
-.subscribe {
-    border: 1px solid #5995DA;
+.logo {
+    align-self: center;
 }
 
 .photo-grid-container {
