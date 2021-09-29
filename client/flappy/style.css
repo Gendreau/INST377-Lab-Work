@@ -1,17 +1,19 @@
-.grid {
-    width: 400px;
-    height: 600px;
-    background-color: yellow;
-    position: relative;
-}
-
-.dooder {
-    width: 60px;
-    height: 85px;
-    background-color: red;
+.game-container {
+    width: 500px;
+    height: 730px;
     position: absolute;
 }
 
-.platform {
-    
+.sky {
+    background-color: light-blue;
+    width: 500px;
+    height: 580px;
+    position: aboslute;
+}
+
+.ground {
+    background-color: brown;
+    width: 500px;
+    height: 150px;
+    position: absolute;
 }
