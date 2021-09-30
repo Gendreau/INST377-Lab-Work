@@ -1,19 +1,59 @@
-YOUR NAME Lab 4: HTML Forms
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Some Web Page</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+    <div class='top-bar'>
+        <p>Matthew Gendreau Lab 3: Flexbox Demo</p>
+    </div>
+    <div class='menu-container'>
+      <div class='menu'>
+        <div class='date'>Aug 14, 2016</div>
+        <div class='links'>
+            <div class='signup'><a href="../lab_3/data.html">Database Demos</a></div>
+            <div class='login'><a href="../index.html">Main Page</a></div>
+        </div>
+      </div>
+    </div>
+    <div class='header-container'>
+        <div class='header'>
+          <div class='subscribe'>Group Project Link</div>
+          <div class='logo'><img src='images/awesome-logo.svg'/></div>
+          <div class='social'><a href="https://github.com/Gendreau/INST377-Lab-Work">My Github</a></div>
+        </div>
+      </div>
+      <div class='photo-grid-container'>
+        <div class='carousel'>
+          <div class='carousel_item carousel_item--visible'>
+            <img src='images/one.svg'/>
+          </div>
+          <div class='carousel_item'>
+            <img src='images/two.svg'/>
+          </div>
+          <div class='carousel_item'>
+            <img src='images/three.svg'/>
+          </div>
+          <div class='carousel_item'>
+            <img src='images/four.svg'/>
+          </div>
+          <div class='carousel_item'>
+            <img src='images/five.svg'/>
+          </div>
 
-today's date
-Database Demos
-Main Page
-
-Group Project Link (no site yet)
-Awesome Logo
-Github Link
-
-image_1
-image_2
-image_3
-image_4
-image_5
-
-footer item 1
-footer item 2
-footer item 3
+          <div class='carousel_actions'>
+              <button id="carousel_left"><</button>
+              <button id="carousel_right">></button>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+      <div class='footer'>
+        <div class='footer-item footer-one'></div>
+        <div class='footer-item footer-two'></div>
+        <div class='footer-item footer-three'></div>
+      </div>
+  </body>
+</html>
