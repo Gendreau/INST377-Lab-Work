@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
     ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
-  background-color: darkslategray;
+  background-color: #36454f;
+  height: 100%;
 }
 
 /* Page Layout */
@@ -24,4 +29,44 @@ body {
 .container {
   max-width: 960px;
   margin-top: 25px;
+}
+
+.title{
+  background-color: orangered;
+  color: black;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+form {
+  margin-left: 100px;
+  width: 25%;
+  background-color: orangered;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.label {
+  color: black;
+}
+
+.submit {
+  padding-top: 10px;
+}
+
+.radio {
+  color: black;
+}
+
+button {
+  background-color: royalblue; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
 }

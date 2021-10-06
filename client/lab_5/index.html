@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+    <h1 class='title'>Matt Gendreau - Lab 5</h1>
+    <form action='/api' method='get' class='form-test'>
+        <div class="field">
+            <label class="label">First Name</label>
+            <div class="control">
+            <input class="input is-small" type="text" name='first-name'>
+            </div>
+        </div>  
+        <div class="field">
+            <label class="label">Food Preference</label>
+            <div class="control">
+            <input class="input is-small" type="text" name='food-pref'>
+            </div>
+        </div>  
+        <div class="control">
+            <label class="label">Veggie or Vegan?</label>
+            <label class="radio">
+              <input type="radio" name="yes">
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="no">
+              No
+            </label>
+          </div>
+          <div class='submit'>
+            <button type='submit'>Submit</button>
+          </div>
+    </form>
+  </body>
+</html>
