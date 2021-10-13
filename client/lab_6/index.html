@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Ahead 👀</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <form class="search-form">
+    <input type="text" class="search" placeholder="City or State">
+    <ul class="suggestions">
+      <p>Filter by name, zip code, or category (restaurant, grocery store, etc.)</p>
+    </ul>
+  </form>
+<script>
+
+async function windowAction() {
+const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
+const endpoint2 = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json'
+
+const request = await fetch(endpoint)
+
+const places = await request.json()
+
+function findMatches(wordToMatch, places) {
+    return places.filter(place => {
+        const regex = new RegExp(wordToMatch, 'gi')
+        return place.name.match(regex) || place.zip.match(regex) || place.category.match(regex)
+    })
+}
+
+/*function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}*/
+
+function displayMatches(event) {
+    const matchArray = findMatches(event.target.value, places)
+    const html = matchArray.map(place => {
+        const regex = new RegExp(event.target.value, 'gi')
+        const zipcode = place.zip.replace(regex, `<span class="hl">${event.target.value}</span>`)
+        const pname = place.name.replace(regex, `<span class="hl">${event.target.value.toUpperCase()}</span>`)
+        return `
+            <li>
+                <span>${pname}</span>
+                <span>${(zipcode)}</span>
+            </li>
+            `
+    }).join('');
+    suggestions.innerHTML = html;
+}
+
+const searchInput = document.querySelector('.search')
+const suggestions = document.querySelector('.suggestions')
+
+searchInput.addEventListener('change', displayMatches)
+searchInput.addEventListener('keyup', (evt) => { displayMatches(evt) })
+}
+
+
+window.onload = windowAction()
+</script>
+</body>
+</html>
