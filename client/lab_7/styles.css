@@ -1,0 +1,21 @@
+/* .hl {
+    background: #ffc600;
+} */
+
+#mapid {
+    height: 250px;
+    width: 500px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result {
+    display: inline-block;
+    color: white;
+    background-color: navy;
+    margin: 2px;
+    padding: 6px;
+}

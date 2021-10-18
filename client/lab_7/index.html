@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Matthew Gendreau</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+</head>
+<body>
+    <h2>Matt Gendreau's Lab 7</h2>
+    <div class='container'>
+        <div class='search'><form class="search-form">
+            <input type="text" class="search" placeholder="City or State">
+            <ul class="suggestions">
+            <p>Filter by name, zip code, or category (restaurant, grocery store, etc.)</p>
+            </ul>
+        </form>
+        </div>
+        <div class="map" id="mapid"></div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
